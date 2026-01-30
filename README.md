@@ -39,5 +39,35 @@ This helps in understanding how ML can be used in cybersecurity and fraud detect
 
 ---
 
+## 📸 Application Screenshots
+
+### 🏠 Home Page
+User enters email content and the ML model analyzes it.
+
+![Home Page](home-page.png)
+
+---
+
+### 🔍 Prediction Result
+The system predicts whether the email is Fake or Real.
+
+![Result](result.png)
+
+---
+
+## ⚙ System Flow
+
+1. User enters email text  
+2. TF-IDF converts text to numbers  
+3. ML model predicts Fake or Real  
+4. Result shown on webpage  
+
+---
+
+## 🗂 Project Structure
+
+
+---
+
 ## 📂 Project Structure
 
