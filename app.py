@@ -1,10 +1,13 @@
 from flask import Flask, render_template, request
+import os
 import joblib
 
 app = Flask(__name__)
 
-model = joblib.load("fake_email_model.pkl")
-vectorizer = joblib.load("vectorizer.pkl")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+model = joblib.load(os.path.join(BASE_DIR, "fake_email_model.pkl"))
+vectorizer = joblib.load(os.path.join(BASE_DIR, "vectorizer.pkl"))
 
 @app.route("/", methods=["GET", "POST"])
 def home():
